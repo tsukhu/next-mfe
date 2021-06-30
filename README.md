@@ -11,5 +11,5 @@ Next JS Module Federation Demo
 
 ## To Do
 
-[] Twin.macro / Tailwind usage
-[] SSR for Module Federation
+  - [ ] Twin.macro / Tailwind usage
+  - [ ] SSR for Module Federation
