@@ -1,37 +1,3 @@
-/* const {
-  withFederatedSidecar,
-  MergeRuntime,
-} = require("@module-federation/nextjs-mf");
-const path = require("path");
-
-module.exports = {
-  webpack: (config, options) => {
-    const { buildId, dev, isServer, defaultLoaders, webpack } = options;
-    const mfConf = {
-      name: "home",
-      library: { type: config.output.libraryTarget, name: "home" },
-      filename: "static/runtime/remoteEntry.js",
-      remotes: {},
-      exposes: {
-        "./Header": "./components/Header",
-      },
-      shared: [],
-    };
-
-    // Configures ModuleFederation and other Webpack properties
-    withModuleFederation(config, options, mfConf);
-
-    config.plugins.push(new MergeRuntime());
-
-    if (!isServer) {
-      config.output.publicPath = "http://localhost:3000/_next/";
-    }
-
-    return config;
-  },
-}; */
-
-
 const {
   withFederatedSidecar,
   federationLoader,
@@ -52,11 +18,11 @@ module.exports = withFederatedSidecar({
     },
   },
 })({
-  future: {
+
     webpack5: true,
-  },
+
   webpack(config,options) {
-    const { webpack } = options;
+    const { webpack,isServer } = options;
     config.experiments = { topLevelAwait: true };
     config.module.rules.push({
       test: /_app.js/,
@@ -76,6 +42,10 @@ module.exports = withFederatedSidecar({
         },
       })
     );
+
+    if (!isServer) {
+      config.output.publicPath = "http://localhost:3000/_next/";
+    }
     return config;
   },
 });
