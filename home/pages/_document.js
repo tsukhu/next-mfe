@@ -1,6 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { patchSharing } from "@module-federation/nextjs-mf";
-
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -10,7 +8,6 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        {patchSharing()}
         <Head />
         <body>
           <Main />

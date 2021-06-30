@@ -110,6 +110,11 @@
   resolved "https://registry.yarnpkg.com/@opentelemetry/context-base/-/context-base-0.14.0.tgz#c67fc20a4d891447ca1a855d7d70fa79a3533001"
   integrity sha512-sDOAZcYwynHFTbLo6n8kIbLiVF3a3BLkrmehJUyEbT9F+Smbi47kLGS2gG2g0fjBLR/Lr1InPD7kXL7FaTqEkw==
 
+"@telenko/node-mf@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@telenko/node-mf/-/node-mf-0.0.4.tgz#79fad11145ba7bbf8979b6cdc1bab7aa888d1456"
+  integrity sha512-xO/PkQm19CFRDnCnH9GqWqZg+5ErJogLKdU+2C4kEgRRJb/yqWleu0MBUZAVFO8VCFxk9binHWrSIOu8YLHfcw==
+
 "@types/eslint-scope@^3.7.0":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@types/eslint-scope/-/eslint-scope-3.7.0.tgz#4792816e31119ebd506902a482caec4951fabd86"
