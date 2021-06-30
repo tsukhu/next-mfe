@@ -10,6 +10,11 @@ Next JS Module Federation Demo
 - contactus: Contact US page
 
 ## To Do
-
+  - [x] Upgrade webpack 5 and latest module federation
+  - [x] Upgrade to next v11
   - [ ] Twin.macro / Tailwind usage
   - [ ] SSR for Module Federation
+
+## Credits
+
+- This is extending the awesome demo project by [Jack Harriton](https://github.com/jherr/wp5-nextjs-10)
